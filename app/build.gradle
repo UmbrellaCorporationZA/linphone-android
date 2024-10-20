@@ -79,8 +79,8 @@ project.tasks['preBuild'].dependsOn 'linphoneSdkSource'
 
 android {
     compileOptions {
-        sourceCompatibility = 17
-        targetCompatibility = 17
+        sourceCompatibility = 19
+        targetCompatibility = 19
     }
 
     compileSdkVersion 34

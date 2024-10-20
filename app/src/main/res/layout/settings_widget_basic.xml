@@ -36,7 +36,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:contentDescription="@null"
-            android:visibility="@{icon != null ? View.VISIBLE : View.GONE}"
+
             android:src="@{icon}" />
 
         <TextView

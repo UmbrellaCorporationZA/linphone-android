@@ -112,13 +112,13 @@ class CorePreferences constructor(private val context: Context) {
         }
 
     var keepServiceAlive: Boolean
-        get() = config.getBool("app", "keep_service_alive", false)
+        get() = config.getBool("app", "keep_service_alive", true)
         set(value) {
             config.setBool("app", "keep_service_alive", value)
         }
 
     var readAndAgreeTermsAndPrivacy: Boolean
-        get() = config.getBool("app", "read_and_agree_terms_and_privacy", false)
+        get() = config.getBool("app", "read_and_agree_terms_and_privacy", true)
         set(value) {
             config.setBool("app", "read_and_agree_terms_and_privacy", value)
         }
@@ -138,7 +138,7 @@ class CorePreferences constructor(private val context: Context) {
         }
 
     var enableAnimations: Boolean
-        get() = config.getBool("app", "enable_animations", false)
+        get() = config.getBool("app", "enable_animations", true)
         set(value) {
             config.setBool("app", "enable_animations", value)
         }
@@ -147,7 +147,7 @@ class CorePreferences constructor(private val context: Context) {
     var darkMode: Int
         get() {
             if (!darkModeAllowed) return 0
-            return config.getInt("app", "dark_mode", -1)
+            return config.getInt("app", "dark_mode", 1)
         }
         set(value) {
             config.setInt("app", "dark_mode", value)
@@ -155,7 +155,7 @@ class CorePreferences constructor(private val context: Context) {
 
     /** Allow to make screenshots of encrypted chat rooms, disables fragment's secure mode */
     var disableSecureMode: Boolean
-        get() = config.getBool("app", "disable_fragment_secure_mode", false)
+        get() = config.getBool("app", "disable_fragment_secure_mode", true)
         set(value) {
             config.setBool("app", "disable_fragment_secure_mode", value)
         }
@@ -258,7 +258,7 @@ class CorePreferences constructor(private val context: Context) {
         }
 
     var contactsShortcuts: Boolean
-        get() = config.getBool("app", "contact_shortcuts", false)
+        get() = config.getBool("app", "contact_shortcuts", true)
         set(value) {
             config.setBool("app", "contact_shortcuts", value)
         }
@@ -304,7 +304,7 @@ class CorePreferences constructor(private val context: Context) {
 
     // Show overlay even when app is in background, requires permission
     var systemWideCallOverlay: Boolean
-        get() = config.getBool("app", "system_wide_call_overlay", false)
+        get() = config.getBool("app", "system_wide_call_overlay", true)
         set(value) {
             config.setBool("app", "system_wide_call_overlay", value)
         }
@@ -453,7 +453,7 @@ class CorePreferences constructor(private val context: Context) {
         get() = config.getBool("app", "show_take_screenshot_button_in_call", false)
 
     val dtmfKeypadVibration: Boolean
-        get() = config.getBool("app", "dtmf_keypad_vibraton", false)
+        get() = config.getBool("app", "dtmf_keypad_vibraton", true)
 
     val allowMultipleFilesAndTextInSameMessage: Boolean
         get() = config.getBool("app", "allow_multiple_files_and_text_in_same_message", true)
@@ -485,11 +485,11 @@ class CorePreferences constructor(private val context: Context) {
 
     // Will hide the SIP contacts selector, leaving only the all contacts list
     val hideSipContactsList: Boolean
-        get() = config.getBool("app", "hide_sip_contacts_list", false)
+        get() = config.getBool("app", "hide_sip_contacts_list", true)
 
     // Will disable chat feature completely
     val disableChat: Boolean
-        get() = config.getBool("app", "disable_chat_feature", false)
+        get() = config.getBool("app", "disable_chat_feature", true)
 
     // Will disable video feature completely
     val disableVideo: Boolean
@@ -577,16 +577,16 @@ class CorePreferences constructor(private val context: Context) {
     /* Assistant */
 
     val showCreateAccount: Boolean
-        get() = config.getBool("app", "assistant_create_account", true)
+        get() = config.getBool("app", "assistant_create_account", false)
 
     val showLinphoneLogin: Boolean
-        get() = config.getBool("app", "assistant_linphone_login", true)
+        get() = config.getBool("app", "assistant_linphone_login", false)
 
     val showGenericLogin: Boolean
         get() = config.getBool("app", "assistant_generic_login", true)
 
     val showRemoteProvisioning: Boolean
-        get() = config.getBool("app", "assistant_remote_provisioning", true)
+        get() = config.getBool("app", "assistant_remote_provisioning", false)
 
     /* Side Menu */
 
@@ -600,7 +600,7 @@ class CorePreferences constructor(private val context: Context) {
         get() = config.getBool("app", "side_menu_settings", true)
 
     val showRecordingsInSideMenu: Boolean
-        get() = config.getBool("app", "side_menu_recordings", true)
+        get() = config.getBool("app", "side_menu_recordings", false)
 
     val showScheduledConferencesInSideMenu: Boolean
         get() = config.getBool(
