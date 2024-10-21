@@ -57,7 +57,7 @@
                 android:background="@drawable/generated_avatar_bg"
                 android:contentDescription="@string/content_description_change_own_picture"
                 android:onClick="@{selfPictureClickListener}"
-                android:src="@drawable/icon_single_contact_avatar"
+                android:src="@drawable/linphone_launcher_icon_foreground"
                 android:visibility="@{viewModel.defaultAccountFound ? View.VISIBLE : View.GONE}" />
 
             <ImageView
@@ -163,7 +163,7 @@
                     android:onClick="@{assistantClickListener}"
                     android:visibility="@{viewModel.showAssistant ? View.VISIBLE : View.GONE}"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp">
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:layout_width="45dp"
@@ -176,7 +176,7 @@
                         android:text="@string/assistant"
                         style="@style/standard_text_font"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="50dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:paddingRight="16dp" />
@@ -193,7 +193,7 @@
                     android:onClick="@{settingsClickListener}"
                     android:visibility="@{viewModel.showSettings ? View.VISIBLE : View.GONE}"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp">
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:layout_width="45dp"
@@ -206,7 +206,7 @@
                         android:text="@string/settings"
                         style="@style/standard_text_font"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="50dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:paddingRight="16dp" />
@@ -223,7 +223,7 @@
                     android:onClick="@{recordingsClickListener}"
                     android:visibility="@{viewModel.showRecordings ? View.VISIBLE : View.GONE}"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp">
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:layout_width="45dp"
@@ -236,7 +236,7 @@
                         android:text="@string/recordings"
                         style="@style/standard_text_font"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="50dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:paddingRight="16dp" />
@@ -253,7 +253,7 @@
                     android:onClick="@{conferencesClickListener}"
                     android:visibility="@{viewModel.showScheduledConferences ? View.VISIBLE : View.GONE}"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp">
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:layout_width="45dp"
@@ -266,7 +266,7 @@
                         android:text="@string/conference_scheduled"
                         style="@style/standard_text_font"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="50dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:paddingRight="16dp" />
@@ -283,7 +283,7 @@
                     android:onClick="@{aboutClickListener}"
                     android:visibility="@{viewModel.showAbout ? View.VISIBLE : View.GONE}"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp">
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:layout_width="45dp"
@@ -296,7 +296,7 @@
                         android:text="@string/about"
                         style="@style/standard_text_font"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="50dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:paddingRight="16dp" />

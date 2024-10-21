@@ -1081,16 +1081,6 @@ internal fun WelcomeFragment.navigateToAccountLogin() {
     }
 }
 
-internal fun WelcomeFragment.navigateToGenericLoginWarning() {
-    if (findNavController().currentDestination?.id == R.id.welcomeFragment) {
-        findNavController().navigate(
-            R.id.action_welcomeFragment_to_genericAccountWarningFragment,
-            null,
-            popupTo()
-        )
-    }
-}
-
 internal fun WelcomeFragment.navigateToRemoteProvisioning() {
     if (findNavController().currentDestination?.id == R.id.welcomeFragment) {
         findNavController().navigate(
@@ -1121,12 +1111,12 @@ internal fun AccountLoginFragment.navigateToPhoneAccountValidation(args: Bundle?
     }
 }
 
-internal fun GenericAccountWarningFragment.navigateToGenericLogin() {
-    if (findNavController().currentDestination?.id == R.id.genericAccountWarningFragment) {
+internal fun WelcomeFragment.navigateToGenericLogin() {
+    if (findNavController().currentDestination?.id == R.id.welcomeFragment) {
         findNavController().navigate(
-            R.id.action_genericAccountWarningFragment_to_genericAccountLoginFragment,
+            R.id.action_welcomeFragment_to_genericAccountLoginFragment,
             null,
-            popupTo(R.id.welcomeFragment, popUpInclusive = false)
+            popupTo()
         )
     }
 }

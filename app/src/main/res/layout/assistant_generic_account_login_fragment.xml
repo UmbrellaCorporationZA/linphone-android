@@ -89,12 +89,14 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
+                    android:text="umbrella-vpbx.sip.umbrella.us.com"
                     android:layout_height="wrap_content"
                     android:hint="@string/domain">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:text="@={viewModel.domain}"
                         android:imeOptions="actionNext"
+
                         android:singleLine="true"
                         android:inputType="textUri"
                         android:background="@color/transparent_color"
@@ -171,10 +173,11 @@
                     android:textColor="@drawable/assistant_button_text_color"
                     style="@style/button_font"
                     android:layout_gravity="center"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="10dp"/>
+                    android:layout_margin="20dp"
+                    android:padding="15dp"/>
 
             </LinearLayout>
 

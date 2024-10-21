@@ -38,9 +38,11 @@ aggregate_imdn=1
 notify_each_friend_individually_when_presence_received=0
 
 [app]
+incoming_call_vibration=1
 activation_code_length=4
 prefer_basic_chat_room=1
 record_aware=1
+debug=0
 
 [account_creator]
 backend=1
@@ -50,5 +52,26 @@ url=https://subscribe.linphone.org/api/
 
 [lime]
 lime_update_threshold=86400
+
+[audio_codec_0]
+mime=PCMA
+rate=8000
+channels=1
+enabled=1
+
+[audio_codec_1]
+mime=G722
+rate=8000
+channels=1
+enabled=1
+
+[audio_codec_2]
+mime=GSM
+rate=8000
+channels=1
+enabled=0
+
+
+
 
 ## End of factory rc

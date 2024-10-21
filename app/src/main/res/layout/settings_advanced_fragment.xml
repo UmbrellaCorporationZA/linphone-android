@@ -68,39 +68,44 @@
 
                 <TextView
                     style="@style/settings_category_font"
-                    android:text="@string/advanced_settings_debug_title"
-                    android:paddingTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:paddingTop="15dp"
+                    android:text="@string/advanced_settings_debug_title"
+                    android:visibility="gone" />
 
                 <include
                     layout="@layout/settings_widget_switch"
-                    linphone:title="@{@string/advanced_settings_debug_mode_title}"
+                    android:visibility="gone"
+                    linphone:checked="@={viewModel.debugMode}"
                     linphone:listener="@{viewModel.debugModeListener}"
-                    linphone:checked="@={viewModel.debugMode}"/>
+                    linphone:title="@{@string/advanced_settings_debug_mode_title}" />
 
                 <include
                     layout="@layout/settings_widget_text"
-                    linphone:title="@{@string/advanced_settings_logs_server_url_title}"
-                    linphone:subtitle="@{@string/advanced_settings_logs_server_url_summary}"
-                    linphone:listener="@{viewModel.logsServerUrlListener}"
+                    android:visibility="gone"
                     linphone:defaultValue="@{viewModel.logsServerUrl}"
+                    linphone:enabled="@{viewModel.debugMode}"
                     linphone:inputType="@{InputType.TYPE_TEXT_VARIATION_URI}"
-                    linphone:enabled="@{viewModel.debugMode}"/>
+                    linphone:listener="@{viewModel.logsServerUrlListener}"
+                    linphone:subtitle="@{@string/advanced_settings_logs_server_url_summary}"
+                    linphone:title="@{@string/advanced_settings_logs_server_url_title}" />
 
                 <include
                     layout="@layout/settings_widget_basic"
-                    linphone:title="@{@string/advanced_settings_send_debug_logs_title}"
+                    android:visibility="gone"
+                    linphone:enabled="@{viewModel.debugMode}"
                     linphone:listener="@{viewModel.sendDebugLogsListener}"
-                    linphone:enabled="@{viewModel.debugMode}"/>
+                    linphone:title="@{@string/advanced_settings_send_debug_logs_title}" />
 
                 <include
                     layout="@layout/settings_widget_basic"
-                    linphone:title="@{@string/advanced_settings_reset_debug_logs_title}"
+                    android:visibility="gone"
+                    linphone:enabled="@{viewModel.debugMode}"
                     linphone:listener="@{viewModel.resetDebugLogsListener}"
-                    linphone:enabled="@{viewModel.debugMode}"/>
+                    linphone:title="@{@string/advanced_settings_reset_debug_logs_title}" />
 
                 <TextView
                     style="@style/settings_category_font"
@@ -127,10 +132,11 @@
 
                 <include
                     layout="@layout/settings_widget_list"
-                    linphone:title="@{@string/advanced_settings_dark_mode_title}"
+                    android:visibility="gone"
+                    linphone:labels="@{viewModel.darkModeLabels}"
                     linphone:listener="@{viewModel.darkModeListener}"
                     linphone:selectedIndex="@{viewModel.darkModeIndex}"
-                    linphone:labels="@{viewModel.darkModeLabels}"/>
+                    linphone:title="@{@string/advanced_settings_dark_mode_title}" />
 
                 <include
                     layout="@layout/settings_widget_switch"
@@ -154,6 +160,7 @@
 
                 <include
                     layout="@layout/settings_widget_switch"
+                    android:visibility="gone"
                     linphone:title="@{@string/advanced_settings_vfs_title}"
                     linphone:subtitle="@{@string/advanced_settings_vfs_summary}"
                     linphone:listener="@{viewModel.vfsListener}"

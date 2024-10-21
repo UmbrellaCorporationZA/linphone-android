@@ -20,7 +20,7 @@
     <string name="about_version" translatable="false">&appName; Android %s</string>
     <string name="about_liblinphone_sdk_version" translatable="false">&appName; SDK %s</string>
     <string name="about_privacy_policy">To report any issues, or bugs please mail mitch@umbrella.us.com</string>
-    <string name="about_text" translatable="false">© 2023 Umbrella Corporation</string>
+    <string name="about_text" translatable="false">© 2024 Umbrella Corporation</string>
     <string name="about_weblate_link" translatable="false"></string>
     <string name="about_weblate_translation"></string>
 
@@ -37,10 +37,10 @@
     <string name="international_prefix">Prefix</string>
     <string name="assistant_choose_country">Choose a country</string>
     <string name="assistant_choose_country_title">Country name or prefix</string>
-    <string name="username">Username</string>
+    <string name="username">Extension/Username</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
-    <string name="domain">Domain</string>
+    <string name="domain">Hostname</string>
     <string name="sip_address">SIP address</string>
     <string name="sip_addresses">SIP addresses</string>
     <string name="cancel">Cancel</string>
@@ -66,7 +66,7 @@
     <string name="transport_tls">TLS</string>
 
     <!-- Launch screen -->
-    <string name="app_description">the <i>libre</i> SIP client</string>
+    <string name="app_description">the <i>Umbrella</i> SoftPhone</string>
 
     <!-- Status fragment -->
     <string name="status_connected">Connected</string>

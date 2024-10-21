@@ -271,7 +271,7 @@ class LinphoneUtils {
                 return params.useInternationalPrefixForCallsAndChats
             }
 
-            return true // Legacy behavior
+            return false // Legacy behavior
         }
 
         fun isPushNotificationAvailable(): Boolean {

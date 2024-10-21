@@ -69,17 +69,18 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="fill"
                         android:layout_columnSpan="1"
-                        android:orientation="horizontal"
+                        android:layout_gravity="fill"
+                        android:layout_margin="10dp"
                         android:gravity="center_vertical"
-                        android:layout_margin="10dp">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <CheckBox
-                            android:enabled="@{!viewModel.termsAndPrivacyAccepted}"
-                            android:checked="@={viewModel.termsAndPrivacyAccepted}"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:checked="@={viewModel.termsAndPrivacyAccepted}"
+                            android:enabled="@{!viewModel.termsAndPrivacyAccepted}" />
 
                         <TextView
                             android:id="@+id/terms_and_privacy"
@@ -127,13 +128,14 @@
                         android:onClick="@{genericAccountLoginClickListener}"
                         style="@style/button_font"
                         android:gravity="center"
-                        android:padding="10dp"
+                        android:padding="20dp"
                         android:layout_margin="20dp"
                         android:layout_width="wrap_content"
                         android:layout_gravity="fill"
                         android:layout_height="wrap_content"
                         android:background="@drawable/assistant_button"
-                        android:textColor="@drawable/assistant_button_text_color"
+                        android:backgroundTint="@color/voip_dark_color"
+
                         android:text="@string/assistant_login_generic" />
 
                     <TextView
@@ -143,13 +145,13 @@
                         android:onClick="@{remoteProvisioningClickListener}"
                         style="@style/button_font"
                         android:gravity="center"
-                        android:padding="10dp"
+                        android:padding="20dp"
                         android:layout_margin="20dp"
                         android:layout_width="wrap_content"
                         android:layout_gravity="fill"
                         android:layout_height="wrap_content"
                         android:background="@drawable/assistant_button"
-                        android:textColor="@drawable/assistant_button_text_color"
+                        android:backgroundTint="@color/voip_dark_color"
                         android:text="@string/assistant_remote_provisioning" />
 
                 </GridLayout>

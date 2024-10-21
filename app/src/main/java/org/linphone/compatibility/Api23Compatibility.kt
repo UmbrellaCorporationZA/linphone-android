@@ -69,7 +69,7 @@ class Api23Compatibility {
 
         @SuppressLint("MissingPermission")
         fun eventVibration(vibrator: Vibrator) {
-            val pattern = longArrayOf(0, 100, 100)
+            val pattern = longArrayOf(0, 30, 30)
             vibrator.vibrate(pattern, -1)
         }
 

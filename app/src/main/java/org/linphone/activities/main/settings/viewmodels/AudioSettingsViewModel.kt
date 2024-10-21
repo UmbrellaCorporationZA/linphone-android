@@ -284,7 +284,7 @@ class AudioSettingsViewModel : GenericSettingsViewModel() {
         }
         codecBitrateLabels.value = labels
 
-        var currentValue = 36
+        var currentValue = 128
         for (payloadType in core.audioPayloadTypes) {
             if (payloadType.isVbr && payloadType.normalBitrate in codecBitrateValues) {
                 currentValue = payloadType.normalBitrate

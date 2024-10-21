@@ -126,13 +126,13 @@ class CorePreferences constructor(private val context: Context) {
     /* UI */
 
     var forcePortrait: Boolean
-        get() = config.getBool("app", "force_portrait_orientation", false)
+        get() = config.getBool("app", "force_portrait_orientation", true)
         set(value) {
             config.setBool("app", "force_portrait_orientation", value)
         }
 
     var replaceSipUriByUsername: Boolean
-        get() = config.getBool("app", "replace_sip_uri_by_username", false)
+        get() = config.getBool("app", "replace_sip_uri_by_username", true)
         set(value) {
             config.setBool("app", "replace_sip_uri_by_username", value)
         }
@@ -406,7 +406,7 @@ class CorePreferences constructor(private val context: Context) {
     /* Dialog related */
 
     var limeSecurityPopupEnabled: Boolean
-        get() = config.getBool("app", "lime_security_popup_enabled", true)
+        get() = config.getBool("app", "lime_security_popup_enabled", false)
         set(value) {
             config.setBool("app", "lime_security_popup_enabled", value)
         }
@@ -586,7 +586,7 @@ class CorePreferences constructor(private val context: Context) {
         get() = config.getBool("app", "assistant_generic_login", true)
 
     val showRemoteProvisioning: Boolean
-        get() = config.getBool("app", "assistant_remote_provisioning", false)
+        get() = config.getBool("app", "assistant_remote_provisioning", true)
 
     /* Side Menu */
 

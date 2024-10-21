@@ -62,7 +62,7 @@
     <string name="status_in_progress">Connexion en cours</string>
     <string name="status_error">La connexion a échoué</string>
     <string name="about">A propos</string>
-    <string name="assistant">Assistant</string>
+    <string name="assistant">Setup</string>
     <string name="recordings">Enregistrements</string>
     <string name="settings">Options</string>
     <string name="quit">Quitter</string>

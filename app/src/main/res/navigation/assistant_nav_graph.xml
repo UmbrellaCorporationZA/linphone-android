@@ -18,15 +18,16 @@
         <action
             android:id="@+id/action_welcomeFragment_to_phoneAccountCreationFragment"
             app:destination="@id/phoneAccountCreationFragment" />
-        <action
-            android:id="@+id/action_welcomeFragment_to_genericAccountWarningFragment"
-            app:destination="@id/genericAccountWarningFragment" />
+
         <action
             android:id="@+id/action_welcomeFragment_to_remoteProvisioningFragment"
             app:destination="@id/remoteProvisioningFragment" />
         <action
             android:id="@+id/action_welcomeFragment_to_noPushWarningFragment"
             app:destination="@id/noPushWarningFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_genericAccountLoginFragment"
+            app:destination="@id/genericAccountLoginFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountLoginFragment"

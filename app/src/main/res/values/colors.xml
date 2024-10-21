@@ -30,10 +30,10 @@
     <color name="voip_translucent_popup_alt_background">#E64B5964</color>
     <color name="voip_numpad_background">#E4E4E4</color>
     <color name="voip_conference_participant_paused_background">#303030</color>
-    <color name="voip_dark_color">#252E35</color>  <!-- Background -->
+    <color name="voip_dark_color">#1D1D1D</color>  <!-- Background -->
     <color name="voip_dark_color2">#3F464B</color>  <!-- Light gray -->
     <color name="voip_dark_color3">#475663</color> <!-- Extra buttons -->
-    <color name="voip_dark_color4">#2D3841</color> <!-- Top bars -->
+    <color name="voip_dark_color4">#EF262626</color> <!-- Top bars -->
     <color name="voip_dark_color5">#353B3F</color> <!-- Scheduled conference background dark mode -->
     <color name="voip_text_dark_color">#6E8596</color> <!-- Text color above voip_dark_color5 -->
     <color name="voip_conf_address_text_color">#A2A2A2</color>

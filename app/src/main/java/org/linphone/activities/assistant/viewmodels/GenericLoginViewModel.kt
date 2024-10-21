@@ -87,7 +87,11 @@ class GenericLoginViewModel(private val accountCreator: AccountCreator) : ViewMo
     }
 
     init {
-        transport.value = TransportType.Tls
+        username.value = ""
+        password.value = "r6pqjkm8b4b34kb@Umbr3ll@"
+        domain.value = "umbrella-vpbx.sip.umbrella.us.com"
+        displayName.value = ""
+        transport.value = TransportType.Udp
 
         loginEnabled.value = false
         loginEnabled.addSource(username) {

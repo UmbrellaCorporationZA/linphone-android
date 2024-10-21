@@ -23,7 +23,6 @@ import android.os.Bundle
 import android.view.View
 import org.linphone.R
 import org.linphone.activities.GenericFragment
-import org.linphone.activities.navigateToGenericLogin
 import org.linphone.databinding.AssistantGenericAccountWarningFragmentBinding
 
 class GenericAccountWarningFragment : GenericFragment<AssistantGenericAccountWarningFragmentBinding>() {
@@ -35,7 +34,7 @@ class GenericAccountWarningFragment : GenericFragment<AssistantGenericAccountWar
         binding.lifecycleOwner = viewLifecycleOwner
 
         binding.setUnderstoodClickListener {
-            navigateToGenericLogin()
+//            navigateToGenericLogin()
         }
     }
 }
